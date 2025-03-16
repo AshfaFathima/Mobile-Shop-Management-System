@@ -1,0 +1,169 @@
+.user-profile{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgb(160, 150, 150);
+}
+
+.pfrofile-section{
+    align-items: center;
+    text-align: center;
+}
+
+.btn-setting{
+    text-align: left;
+    color: black;
+    background-color: transparent;
+    margin-top: 5px;
+    border: none;
+    transition: .4s;
+}
+
+.btn-setting:hover{
+    background-color: rgb(180, 180, 180);
+    color: black;
+    font-size: large;
+}
+
+.fa-chevron-right{
+    position: absolute;
+    right: 15%;
+}
+
+.profile{
+    background-color: white;
+}
+
+.profile-card{
+    border: none;
+    align-items: center;
+}
+
+.profile-img{
+    width: 200px;
+    height: 200px;
+}
+
+div.form-style{
+    background-color: white;
+    height: 500px;
+    width: 450px;
+    border-left: 1px solid black;
+}
+
+.userProfile-form{
+    text-align: left;
+    position: relative;
+    left: 120px;
+    top: 70px;
+}
+
+.success-Msg{
+    color: #0bcb78;
+    position: relative;
+    top: 10px ;
+    left: 120px;
+    text-align: center;
+    padding: 15px;
+}
+
+.error-Msg{
+    color: red;
+    position: relative;
+    left: 120px;
+    text-align: center;
+}
+
+.formTitle{
+    position: relative;
+    top: 50px ;
+    left: 120px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+input.form-control, .form-select{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 0%;
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+input.form-control:focus, .form-select:focus{
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    box-shadow: none;
+    
+}
+
+input.form-control:focus::placeholder {
+    color: transparent;
+}
+
+input.btn{
+    font-size: 15px;
+    padding: 8px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: #0bcb78;
+    cursor: pointer;
+}
+
+input.btn:hover{
+    background-color: black;
+}
+
+.form-label{
+    color: red;
+    font-size: 10px;
+}
+
+#ShowPassword{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    bottom: 25px;
+    left: 93%;
+    margin: 0;
+}
+
+
+@media(max-width: 1200px){
+
+    div.form-style{
+        background-color: white;
+        height: 500px;
+        width: 350px;
+        border-left: none;
+    }
+
+    
+    .userProfile-form{
+        text-align: left;
+        position: relative;
+        left: 0px;
+        top: 70px;
+    }
+
+    .formTitle{
+        position: relative;
+        top: 50px ;
+        left: 120px;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: left;
+        padding: 15px;
+        margin-bottom: 5px;
+    }
+}

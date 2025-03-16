@@ -1,0 +1,575 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    background: linear-gradient(45deg,#CCFFFF,#f7dbf7);
+    background-color: white;
+    border-bottom:none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.navIcons{
+    border: none;
+    color: black;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    transition: 0.3s color;
+}
+
+.navIcons:hover{
+    color: white;
+    background-color: rgb(0, 127, 195);
+}
+
+.wish-qty{
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: 9.4%;
+    width: 15px;
+    height: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.cart-qty{
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: 5.5%;
+    width: 15px;
+    height: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+#update-btn,
+.option-btn,
+.delete-btn,
+.update-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-btn{
+    background-color: rgb(0, 127, 195);
+}
+
+.option-btn:hover,
+.update-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.delete-btn{
+   background-color: red;
+}
+
+.delete-btn:hover{
+   background-color: black;
+}
+
+.update-btn {
+   background-color: #0bcb78;
+}
+
+.update-btn:hover {
+    background-color: black;
+}
+
+.modal-dialog-right{
+    position: absolute;
+    right: 0px;
+    margin-top: 60px;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: black;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: rgb(0, 127, 195);
+}
+
+@media(min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 3px;
+        background-color: rgb(0, 127, 195);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+
+    }
+
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.hero-section{
+    margin: 15px;
+}
+
+.carousel-inner{
+    height:400px;
+}
+
+div.facilities{
+    text-align: center;
+    font-size: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.empty{
+    border: 1px solid black;
+    border-radius: .5rem;
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: red;
+}
+
+.product-inner-box .products-icons{
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    top: 3%;
+    transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.product-inner-box .products-icons a,
+.product-inner-box .products-icons button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: black;
+    background: rgb(173, 202, 200);
+}
+
+.product-inner-box .discount .badge{
+    background: black;
+    font-size: 12px;
+    padding: 5px 14px;
+    top: 0px;
+    position: absolute;
+
+}
+
+.product-inner-box .discount .badge::before{
+    border-width: 10px 0px 0px 10px;
+    border-color: transparent transparent transparent black;
+    content: "";
+    position: absolute;
+    right: -8px;
+    width: 0;
+    bottom: 0;
+    border-style: solid;
+}
+
+.product-inner-box .discount .badge::after{
+    border-width: 10px 8px 0 10px;
+    border-color: black transparent transparent;
+    content: "";
+    position: absolute;
+    right: -8px;
+    width: 0;
+    top: 0;
+    border-style: solid;
+}
+
+.product-inner-box img{
+    box-shadow: 10px 10px 50px -29px rgb(0 0 0);
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-box.is-hover .products-icons{
+    transform: rotateY(-13%);
+    top: 5%;
+    opacity: 1;
+}
+
+.cart-button{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.btn-white{
+    background-color: white;
+}
+
+.btn-white:hover{
+    background-color: black;
+    color: white;
+}
+
+.product-box.is-hover .cart-button{
+    opacity: 1;
+}
+
+.cartModal{
+    align-items: center;
+}
+
+.add-cart-btn{
+    position: relative;
+    background-color: white;
+}
+
+.add-cart-btn:hover{
+    background-color: rgb(0, 127, 195);
+    color: white;
+}
+
+.cart-card{
+    border: none;
+}
+
+.cart-card-bottom{
+    padding: 0 10px;
+    height: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    margin-right: 0px;
+}
+
+#input-qty{
+    text-align: center;
+    border: none;
+    outline: transparent;
+    border-radius: 50px;
+    width: 100px;
+}
+
+.label-qty{
+    color: white;
+}
+
+.modal-col{
+    margin-top:10px;
+    text-align: center;
+}
+
+/*user profile styles*/
+
+
+/*Start Qiuck View*/
+
+.productView .addCart-btn{
+    background-color: #0bcb78;
+    display: block;
+    width: 200px;
+    transition: 0.4s;
+}
+
+.productView .addCart-btn:hover{
+    background-color: black;
+    display: block;
+    width: 220px;
+}
+
+.productView .addWish-btn{
+    background-color: rgb(0, 127, 195);
+    display: block;
+    width: 150px;
+    transition: 0.4s;
+}
+
+.productView .addWish-btn:hover{
+    background-color: black;
+    display: block;
+    width: 170px;
+}
+
+.productView .quickView-price{
+    font-weight: bold;
+}
+
+.success-message{
+    text-align: center;
+    color: rgb(0, 190, 0);
+}
+
+.unsuccess-message{
+    text-align: center;
+    color: red;
+}
+
+/*End Qiuck View*/
+
+/*Start search page*/
+
+.search-form{
+    text-align: center;
+}
+
+.search-form form{
+    align-items: center;
+    gap: 15px;
+}
+
+.search-form form .search-input{
+    width: 50%;
+    padding: 10px;
+    color: black;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.search-form form .search-input:hover{
+    width: 60%;
+    padding: 10px;
+    color: black;
+    border-radius: 50px;
+}
+
+.search-form form .search-btn{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(0, 127, 195);
+    color: white;
+    transition: 0.3s;
+}
+
+.search-form form .search-btn:hover{
+    height: 45px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+/*Start search page*/
+
+/*Start about page*/
+.about-tittle{
+    margin-top: 120px;
+    font-weight: bold;
+}
+
+.contactUs-btn{
+    background-color: blue;
+    width: 150px;
+    transition: 0.4s;
+}
+
+.contactUs-btn:hover{
+    background-color: black;
+    width: 180px;
+}
+
+div.contact-section{
+    box-shadow: 0 5px 15px rgb(160, 150, 150);
+    margin-top: 120px;
+    background-color: white;
+    height: 600px;
+    width: 500px;
+}
+
+.contact-submit-btn{
+    background-color: blue;
+    width: 80%;
+    transition: 0.4s;
+}
+
+.contact-submit-btn:hover{
+    background-color: black;
+    width: 100%;
+}
+
+/*End about page*/
+
+/*Cart start*/
+
+.cart-table{
+    box-shadow: 0 5px 15px rgb(160, 150, 150);
+}
+
+table .cartImages{
+    width: 120px;
+    height: 120px;
+}
+
+.input-group .cart-Quantity{
+    text-align: center;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 50px;
+}
+
+.save-btn{
+    color: black;
+    background-color: #0bcb78;
+    transition: 0.4s;
+}
+
+.save-btn:hover{
+    color: white;
+    background-color: black;
+}
+
+.cart-delete-btn{
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+}
+
+.cart-delete-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+th,td{
+    vertical-align: middle;
+}
+
+.grand-total{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.checkout-btn{
+    background-color:rgb(0, 127, 195);
+    color: white;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover{
+    background-color: black;
+    color: white;
+    width: 120px;
+}
+
+/*Cart end*/
+
+/*Checkout start*/
+
+.checkout-Table{
+    width: 50%;
+}
+
+table tbody tr td .checkoutImages{
+    width: 50px;
+    height: 50px;
+}
+
+table tbody tr .checkoutText{
+    font-size: 10px;
+}
+
+.checkout-Sections{
+    box-shadow: 0 5px 15px rgb(160, 150, 150);
+}
+
+.checkout-Sections form{
+    font-size: 12px;
+}
+
+.checkout-Sections form .place-order-btn-section{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.checkout-Sections form .btn-place-order{
+    background-color: rgb(0, 127, 195);
+    color:white;
+    width: 75%;
+    transition: 0.3s;
+}
+
+.checkout-Sections form .btn-place-order:hover{
+    background-color: black;
+    color:white;
+    width: 100%;
+}
+
+.checkout-Sections form #paymentSlipInput:disabled{
+    background-color: #f8f9fa;
+    color: #ccc;
+}
+
+.checkout-Sections form #paymentSlipLabel:disabled{
+    color: #ccc;
+}
+
+/*Checkout end*/
+
+.orderView{
+    box-shadow: 0 5px 15px rgb(160, 150, 150);
+}
+
+.fetchData{
+    color:blue;
+}
+
+.test{
+    background-color: rgb(38, 38, 38);
+    margin-top: 5;
+    opacity: 20%;
+}

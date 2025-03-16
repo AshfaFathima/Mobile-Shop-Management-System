@@ -1,0 +1,273 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    background: linear-gradient(45deg,#CCFFFF,#f7dbf7);
+    background-color: white;
+    border-bottom:none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.login-button{
+    background-color: black;
+    color: white;
+    width: 60px;
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.login-button:hover{
+    width: 5%;
+    color: white;
+    background-color: rgb(0, 127, 195);
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: black;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: rgb(0, 127, 195);
+}
+
+@media(min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 3px;
+        background-color: rgb(0, 127, 195);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+
+    }
+
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+
+#update-btn,
+.option-btn,
+.delete-btn,
+.update-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-btn{
+   background-color: rgb(0, 127, 195);
+}
+
+.option-btn:hover,
+.update-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.delete-btn{
+   background-color: red;
+}
+
+.delete-btn:hover{
+   background-color: black;
+}
+
+.update-btn {
+   background-color: #0bcb78;
+}
+
+.update-btn:hover {
+    background-color: black;
+}
+
+.col-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    margin-top: 120px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container .row .col.custom-col{
+    height: 250px;
+    margin: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .row .col.custom-col h3 {
+    margin-top: 25px;
+}
+
+.container .row .col.custom-col p {
+    margin-top: 25px;
+    padding: 30px;
+    background-color: rgb(180, 180, 180);
+    border-radius: 10px;
+}
+
+.container .row .col.custom-col a {
+    border-radius: 10px;
+}
+
+div.col-4.profile{
+    background-color: white;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgb(160, 150, 150);
+    margin: 100px auto;
+}
+
+div.form-style{
+    background-color: white;
+    width: 450px;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgb(160, 150, 150);
+    margin: 100px auto;
+}
+
+form{
+    margin: 20px;
+}
+
+.formTitle{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+input.form-control, .form-select{
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 0%;
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+input.form-control:focus, .form-select:focus{
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    box-shadow: none;
+    
+}
+
+input.form-control:focus::placeholder {
+    color: transparent;
+}
+
+input.btn{
+    font-size: 15px;
+    padding: 8px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: rgb(93, 189, 150);
+    cursor: pointer;
+}
+
+.form-label{
+    color: red;
+    font-size: 10px;
+}
+
+#ShowPassword{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    bottom: 25px;
+    left: 93%;
+    margin: 0;
+}
+
+.card-img-top{
+    border-radius: 10px;
+}
+
+p.empty{
+    border: 1px solid black;
+    border-radius: .5rem;
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: red;
+}
+
+.orderView{
+    box-shadow: 0 5px 15px rgb(160, 150, 150);
+}
+
+.order-card{
+    box-shadow: 0 5px 15px rgb(160, 150, 150);
+}
+
+.fetchData{
+    color:blue;
+}
+
+.success-message{
+    text-align: center;
+    color: rgb(0, 190, 0);
+    font-weight: bold;
+}
+
+.unsuccess-message{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
